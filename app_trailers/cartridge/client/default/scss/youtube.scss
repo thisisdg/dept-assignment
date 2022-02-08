@@ -1,0 +1,12 @@
+.embeddedPlayer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    flex-direction: row;
+
+    iframe {
+        height: 315px;
+        width: 560px;
+        padding: 15px;
+    }
+}

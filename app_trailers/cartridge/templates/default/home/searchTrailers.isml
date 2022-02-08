@@ -1,0 +1,17 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/parseResponse.js');
+        assets.addCss('/css/youtube.css');
+    </isscript>
+
+    <form class="search-trailer" action="${URLUtils.url('Trailers-Search')}" method="get">
+        <label>Movie Title</label>
+        <input type="text" name="qString" placeholder="Enter title.."/>
+        <button type="Submit">Search Trailers</button>
+    </form>
+
+    <div class="imdb-rating"></div>
+
+    <div class="embeddedPlayer"></div>
+</isdecorate>
